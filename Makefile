@@ -26,4 +26,5 @@ distclean:
 	rm -rf $(cmake_build_dir)
 
 test:
+	( cd src/parser && cargo test )
 	make -C tests
